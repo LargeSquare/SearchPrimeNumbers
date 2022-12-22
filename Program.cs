@@ -5,7 +5,6 @@ namespace SearchPrimeNumbers
 {
     public static class SearchPrimeNumbers
     {
-        private static List<int> primeNumbers { get; set; } = new List<int>();
         private static Stopwatch stopwatch { get; set; } = new Stopwatch(); 
         public static void Main(string[] args)
         {
@@ -42,10 +41,9 @@ namespace SearchPrimeNumbers
                     }
                 }
 
-                if (primaryFlag) primeNumbers.Add(testingNumber);
+                if (primaryFlag) Logger.Log(testingNumber.ToString());
             }
 
-            foreach (int number in primeNumbers) Logger.Log(number.ToString());
         }
     }
 }
