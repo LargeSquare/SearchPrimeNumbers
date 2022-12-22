@@ -9,6 +9,6 @@ namespace SearchPrimeNumbers.Service
     internal static class Config
     {
         public static int From { get; set; } = 3;
-        public static int To { get; set; } = 100;
+        public static int To { get; set; } = 1000000;
     }
 }
