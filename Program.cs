@@ -45,8 +45,7 @@ namespace SearchPrimeNumbers
                 if (primaryFlag) primeNumbers.Add(testingNumber);
             }
 
-
-            //foreach (int number in primeNumbers) Console.WriteLine(number);
+            foreach (int number in primeNumbers) Logger.Log(number.ToString());
         }
     }
 }
