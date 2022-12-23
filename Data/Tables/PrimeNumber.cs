@@ -6,6 +6,10 @@ namespace SearchPrimeNumbers.Data.Tables
     internal class PrimeNumber
     {
         [Key]
+        public int Id { get; set; }
+
+        [Required]
+        [DefaultValue(0)]
         public int Number { get; set; }
 
         [Required]

@@ -6,7 +6,7 @@ namespace SearchPrimeNumbers.Data
 {
     internal class DatabaseModel : DbContext
     {
-        public DatabaseModel() : base("")
+        public DatabaseModel() : base("DataBaseConnectionRuntime")
         {
 
         }
