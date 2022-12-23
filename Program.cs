@@ -1,4 +1,5 @@
-﻿using SearchPrimeNumbers.Service;
+﻿using SearchPrimeNumbers.Data.Tables;
+using SearchPrimeNumbers.Service;
 using System.Diagnostics;
 
 namespace SearchPrimeNumbers
@@ -8,6 +9,8 @@ namespace SearchPrimeNumbers
         private static Stopwatch stopwatch { get; set; } = new Stopwatch(); 
         public static void Main(string[] args)
         {
+            Database.Init();
+
             stopwatch.Start();
 
             RunCode();
