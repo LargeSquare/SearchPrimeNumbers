@@ -364,3 +364,4 @@ FodyWeavers.xsd
 /images
 /Migrations
 /App.config
+/appconfig.json
